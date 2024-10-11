@@ -10,3 +10,17 @@ def insert_sort(array, n):
 
 array = [3, 1, 2, 4, 0]
 insert_sort(array, len(array))
+
+def insert_sort_2(array, n):
+    for i in range(2, n):
+        x = array[i]
+        array[0] = x
+        j = i - 1
+        while x < array[j]:
+            array[j+1] = array[j]
+            j -= 1
+        array[j+1] = x
+    print(array)
+
+array = [3, 1, 2, 4, 0]
+insert_sort_2(array, len(array))

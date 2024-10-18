@@ -12,7 +12,8 @@ array = [3, 1, 2, 4, 0]
 insert_sort(array, len(array))
 
 def insert_sort_2(array, n):
-    for i in range(2, n):
+    array.insert(0, '#')
+    for i in range(2, n+1):
         x = array[i]
         array[0] = x
         j = i - 1
@@ -22,5 +23,5 @@ def insert_sort_2(array, n):
         array[j+1] = x
     print(array)
 
-array = [3, 1, 2, 4, 0]
+array = [3, 1, 2, 4, 0, 6, 5, 3, 10, 9]
 insert_sort_2(array, len(array))

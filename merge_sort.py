@@ -28,5 +28,7 @@ def merge_sort(A, p, r):
         merge(A,p,q,r)
     return A
 
-array = [5, 1, 3, 4, 2, 10, 14, 11, 9, 12]
-print(merge_sort(array,0,  len(array) - 1))
+# array = [5, 1, 3, 4, 2, 10, 14, 11, 9, 12]
+print(T)
+merge_sort(array,0,  len(T) - 1)
+print(T)
